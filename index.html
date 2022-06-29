@@ -16,7 +16,6 @@
             height: 100vh;
             margin: 0;
             overflow: hidden;
-            padding: 2rem;
             color: white;
             font: 1.3rem Menlo, Consolas, monospace;
             text-shadow: 0 0 5px #C8C8C8;
@@ -39,14 +38,16 @@
             pointer-events: none;
         }
 
-        .highlight-line {
-            background-color: rgba(255, 0, 0, 0.6);
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
         }
 
-
-        tr,
-        td {
-            text-align: center;
+        .highlight-line {
+            background-color: rgba(255, 0, 0, 0.6);
         }
 
         .btn + .btn {
@@ -75,25 +76,18 @@
             text-align: center;
         }
 
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-        }
-        table, th, td {
-            border: 1px solid white;
+        table {
             border-collapse: collapse;
-            padding: 5px;
-            width: 100%;
         }
+        th, td {
+            border: 1px solid white;
+            text-align: center;
+            padding: 8px;
+        }
+
         .module-body {
             display: flex;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-        }
-        .row {
-            display: flex;
         }
         .module {
             display: flex;
